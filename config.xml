@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:sl="http://www.signagelive.com/widgets" id="https://github.com/signagelive/widget-simple-with-libraries" version="0.0.1" width="1920" height="1080">
+	<!-- Name of the widget displayed in Signagelive as the name of the Media Asset -->
+	<name>
+		Preferences and Validation Example
+	</name>
+	<description>
+		An example widget demonstrating all preference types and validation properties
+	</description>
+	<!-- Widget author -->
+	<author>
+		Signagelive Limited
+	</author>
+	<!-- Start page for widget -->
+	<content src="index.html" />
+	<!-- Icons to display in Signagelive, not essential as Signagelive will attempt to generate a preview if these are omitted -->
+	<icon src="media/thumb.png" sl:thumbnail="large" />
+	<icon src="media/thumb.png" sl:thumbnail="small" />
+	<!-- Preferences (Optional) -->
+	<preference name="Boolean" value="True" sl:type="boolean" />
+	<preference name="Boolean Required" value="True" sl:type="boolean" sl:required="true" />
+	<preference name="Boolean Read Only" value="True" sl:type="boolean" sl:readonly="true" />
+	<preference name="Colour" value="#0000ff" sl:type="colour" />
+	<preference name="Colour Required" value="#0000ff" sl:type="colour" sl:required="true" />
+	<preference name="Colour Read Only" value="#0000ff" sl:type="colour" sl:readonly="true" />
+	<preference name="DateTime" value="2015-03-13T12:47:29Z" sl:type="datetime" />
+	<preference name="DateTime Required" value="2015-03-13T12:47:29Z" sl:type="datetime" sl:required="true" />
+	<preference name="DateTime Read Only" value="2015-03-13T12:47:29Z" sl:type="datetime" sl:readonly="true" />
+	<preference name="Float" value="0.214" sl:type="float" />
+	<preference name="Float Required" value="0.214" sl:type="float" sl:required="true" />
+	<preference name="Float Read Only" value="0.214" sl:type="float" sl:readonly="true" />
+	<preference name="Float Min Only (5)" value="0.214" sl:type="float" sl:min="5" />
+	<preference name="Float Max Only (17)" value="0.214" sl:type="float" sl:max="17" />
+	<preference name="Float Min/Max (5,17)" value="0.214" sl:type="float" sl:min="5" sl:max="17" />
+	<preference name="Float Range [5,17]" value="0.214" sl:type="float" sl:range="[5,17]" />
+	<preference name="Int" value="13" sl:type="int" />
+	<preference name="Int Required" value="13" sl:type="int" sl:required="true" />
+	<preference name="Int ReadOnly" value="13" sl:type="int" sl:readonly="true" />
+	<preference name="Int Min Only (5)" value="13" sl:type="int" sl:min="5" />
+	<preference name="Int Max Only (17)" value="13" sl:type="int" sl:max="17" />
+	<preference name="Int Min/Max (5,17)" value="13" sl:type="int" sl:min="5" sl:max="17" />
+	<preference name="Int Range [5,17]" value="13" sl:type="int" sl:range="[5,17]" />
+	<preference name="List" value="Orange" sl:type="list" sl:set="Apple|Orange|Pear" />
+	<preference name="List Required" value="Orange" sl:type="list" sl:set="Apple|Orange|Pear" sl:required="true" />
+	<preference name="List ReadOnly" value="Orange" sl:type="list" sl:set="Apple|Orange|Pear" sl:readonly="true" />
+	<preference name="String" value="Hello World" sl:type="string" />
+	<preference name="String Required" value="Hello World" sl:type="string" sl:required="true" />
+	<preference name="String Read Only" value="Hello World" sl:type="string" sl:readonly="true" />
+	<preference name="String Min Length (5)" value="Hello World" sl:type="string" sl:minlength="5" />
+	<preference name="String Max Length (17)" value="Hello World" sl:type="string" sl:maxlength="17" />
+	<preference name="String Min/Max Length (5,17)" value="Hello World" sl:type="string" sl:minlength="5" sl:maxlength="17" />
+	<preference name="String RegEx (Case insensitve match only a-z)" value="HelloWorld" sl:type="string" sl:pattern="^[A-z]+$" />
+	<preference name="Email" value="test@test.com" sl:type="string" sl:stringtype="email" />
+	<preference name="URL" value="http://www.signagelive.com" sl:type="string" sl:stringtype="url" />
+	<preference name="Alnum" value="135f5" sl:type="string" sl:stringtype="alphanum" />
+</widget>
